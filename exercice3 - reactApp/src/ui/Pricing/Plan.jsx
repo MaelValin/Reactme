@@ -5,7 +5,7 @@ const svgcheckmark = (
         fill:"none",
         strokeWidth:"2",
         stroke:"currentColor"}} 
-        viewBox="0 0 24 24" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
+        viewBox="0 0 24 24" className="mr-3 h-5 w-5 text-white dark:text-primary-400">
         <path style={{
             strokeLinecap:"round",
             strokeLinejoin:"round"}}
@@ -45,7 +45,7 @@ export default function Plan({label, price, advantages, onOrder=null}) {
               Acheter
             </button>}
           </div>
-          <div className="p-6">
+          <div className="p-6 text-white">
             <ul>
                 {advantages.map((item, index) => (
                     <Item key={index} text={item.text} check={item.check} />

@@ -12,14 +12,15 @@ export default function NavBar() {
     <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
   
         <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white">
-          <a className="mb-4 lg:mb-0 lg:pe-2 text-[#BBA]" href="/crash">Our Teams </a>
-          <a className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" href="/team/sales">Sales</a>
-          <a className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" href="/team/webdesign">Webdesign</a>
-          <a className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" href="/team/development">Development</a>
+        <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/">Home </Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 text-[#BBA]" to="/crash">Our Teams </Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/sales">Sales</Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/webdesign">Webdesign</Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/development">Development</Link>
         </div>
         <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
-          <a className="ml-15 mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" href="/buy">Buy</a>
-          <a className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" href="/about">?</a>
+          <Link className="ml-15 mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/buy">Buy</Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/about">?</Link>
         </div>
           
     </div>

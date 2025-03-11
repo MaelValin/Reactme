@@ -1,12 +1,16 @@
+import {fakeNetwork} from './utils.js';
+
 
 
 export async function fetchOurTeams(teamName){
+    await fakeNetwork(); // simulate network delay
     let answer = await fetch('/src/lib/data/teams-data.json');
     let data = await answer.json();
     return data[teamName];
 }
 
 export async function fetchTestimonialData(teamName){
+  
     let answer = await fetch('/src/lib/data/testimonial-data.json');
     let data = await answer.json();
     data = data[teamName];
